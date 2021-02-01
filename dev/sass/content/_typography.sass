@@ -1,0 +1,62 @@
+@charset "utf-8"
+
+.highlight, mark
+  color: #333
+  background-color: $yellow
+
+.del, .line-through, del
+  text-decoration: line-through
+
+.underline, u
+  text-decoration: underline
+
+.small, small
+  font-size: .875em
+
+.strong, strong
+  font-weight: 700
+
+.italic, em
+  font-style: italic  
+
+.blockquote, blockquote
+  font-size: 1.25em
+
+.callout
+  overflow: hidden
+  padding: 20px
+  border: 1px solid $border
+    left: 3px solid $border
+    radius: $radius
+
+  &-heading
+    font:
+      size: 20px
+      weight: 700
+    margin-bottom: 15px
+
+  @each $color in $colors
+    &.is-#{$color}
+      border-left-color: $color !important
+
+.text
+
+  $aligns: "left", "right", "center"
+  @each $align in $aligns
+    &-#{$align}
+      text-align: $align !important
+
+  $transforms: "uppercase", "lowercase", "capitalize"
+  @each $transform in $transforms
+    &-#{$transform}
+      text-transform: $transform !important
+
+  // Color
+  @each $color in $colors
+    &-#{$color}
+      color: $color !important
+
+  &-truncate
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap

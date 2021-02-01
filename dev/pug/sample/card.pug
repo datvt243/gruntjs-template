@@ -1,0 +1,28 @@
+extends ../_layouts/default
+
+block vars
+  -title        = 'Card'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'card'
+  -path         = '..'
+block container
+
+  +keyvisual('Post')
+
+  // ./ Section
+  section.section-parts
+    .wrapper
+      .section-header
+        +heading_primary('Card')
+      .section-content
+        .row.four-column
+          .col
+            +card(path+'/img/sample/img_500x500.jpg')
+          .col
+            +card(path+'/img/sample/img_1000x500.jpg')
+          .col
+            +card(path+'/img/sample/img_500x1000.jpg')
+
+
+

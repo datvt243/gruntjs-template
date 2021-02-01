@@ -1,0 +1,111 @@
+extends ../_layouts/default
+
+block vars
+  -title        = 'Form'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'form'
+  -path         = '..'
+block container
+
+  +keyvisual('Form')
+
+  // ./ Section
+  section.section-parts
+    .wrapper
+      .section-header
+        +heading_primary('Forms wrapper')
+        p.lead Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam molestias a explicabo deleniti distinctio praesentium fugiat dolorum quod tenetur, consequuntur, quo nisi placeat minus et commodi, nemo possimus? Obcaecati, ipsum.
+      .section-content
+        h3.heading-secondary Default
+        .form-wrapper
+          //- Form Wrapper
+          form.form.form-inline
+            .contact-form.mw_wp_form.mw_wp_form_input
+              //- Form Group [text]
+              .form-group
+                .form-label
+                  label.label(for="text") Lorem ipsum  Text
+                  span.required required
+                .form-control
+                  span.mw-wrap
+                    input(type="text" name="name" id="text" class="mw-element mwform-text" value="" placeholder="Input your text" required)
+              //- Form Group [Checkbox]
+              .form-group
+                .form-label
+                  span.label Lorem ipsum  Checkbox
+                  span.required required
+                .form-control
+                  span.mw-wrap
+                    span.mwform-checkbox-field.vertical-item
+                      label
+                        input(type="checkbox" name="checkbox[data][]" value="checkbox01" required)
+                        span.mwform-checkbox-field-text Checkbox01
+                    span.mwform-checkbox-field.vertical-item
+                      label
+                        input(type="checkbox" name="checkbox[data][]" value="checkbox02" required)
+                        span.mwform-checkbox-field-text Checkbox02
+              //- Form Group [password]
+              .form-group
+                .form-label
+                  label.label(for="password") Lorem ipsum  Password
+                  span.required required
+                .form-control
+                  span.mw-wrap
+                    input(type="password" name="password" id="password" class="mw-element mwform-password" value="" placeholder="Input your password" required)
+              //- Form Group [number]
+              .form-group
+                .form-label
+                  label.label(for="number") Lorem ipsum  Tel
+                  span.required required
+                .form-control
+                  span.mw-wrap
+                    input(type="number" name="number" id="number" class="mw-element mwform-number" value="" placeholder="Input your number" required)
+              //- Form Group [email]
+              .form-group
+                .form-label
+                  label.label(for="email") Lorem ipsum  Email
+                  span.required required
+                .form-control
+                  span.mw-wrap
+                    input(type="email" name="email" id="email" class="mw-element mwform-email" value="" placeholder="Input your email" required)
+              //- Form Group [Select]
+              .form-group
+                .form-label
+                  span.label Lorem ipsum  Select
+                  span.required required
+                .form-control
+                  span.mw-wrap
+                    select(name="region" class="mw-element mwform-select" required)
+                      option(value="") Select ------
+                      option(value="value01") Lorem ipsum 01
+                      option(value="value02") Lorem ipsum 02
+                      option(value="value03") Lorem ipsum 03
+                      option(value="value04") Lorem ipsum 04
+              //- Form Group [message]
+              .form-group
+                .form-label
+                  label.label(for="message") Lorem ipsum  Textarea
+                  span.required required
+                .form-control
+                  span.mw-wrap
+                    textarea(rows="10" name="message" id="message" class="mw-element mwform-textarea" placeholder="Input your messenger" required)
+              //- Form Group [Radio]
+              .form-group
+                .form-label
+                  span.label Lorem ipsum  Radio
+                  span.required required
+                .form-control
+                  span.mw-wrap
+                    span.mwform-radio-field.vertical-item
+                      label
+                        input(type="radio" name="radio" value="radio" required)
+                        span.mwform-radio-field-text Radio01
+                    span.mwform-radio-field.vertical-item
+                      label
+                        input(type="radio" name="radio" value="radio" required)
+                        span.mwform-radio-field-text Radio02
+              //- Form Group
+              .form-group.is-block
+                .block.text-center
+                  button(type="submit" class="btn btn-primary mw-element mwform-button") Sumbit

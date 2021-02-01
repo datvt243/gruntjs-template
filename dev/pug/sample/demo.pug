@@ -1,0 +1,22 @@
+extends ../_layouts/default
+
+block vars
+  -title        = 'Page'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'page'
+  -path         = '..'
+block container
+
+  +keyvisual('Post')
+
+  // ./ Section
+  section.section-parts
+    .wrapper
+      .section-header
+        +heading_primary('Demo Wrapper')
+      .section-content
+        h1.stroke
+          svg(xmlns='http://www.w3.org/2000/svg', width='640', height='72', viewBox='0 0 640 72')
+            text(x='0', y='64') Stroke of Genius
+

@@ -1,0 +1,29 @@
+@charset "utf-8"
+
+table
+  width: 100%
+  caption-side: bottom
+  border-collapse: collapse
+
+.table
+  width: 100%
+  +border
+
+  th, td
+    padding: 10px
+    vertical-align: top
+    +border
+
+  thead
+    th
+      font-weight: 700
+      vertical-align: bottom
+
+  &-container
+    position: relative
+    &:not(:last-child)
+      margin-bottom: 20px
+
+  &-responsive
+    overflow-x: auto
+    -webkit-overflow-scrolling: touch

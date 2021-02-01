@@ -1,0 +1,27 @@
+extends _layouts/default
+
+block vars
+  -title        = 'Top'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'top'
+  -path         = '.'
+block container
+
+  .breadcrumb-container
+    .container
+      ul.breadcrumb-list
+        li.item
+          a.breadcrumb-link(href=path+"/") Home
+        li.item
+          span.breadcrumb-link Page Under
+
+  // ./ Section Top
+  section.section-top
+    .container
+      .section-header
+        +heading_primary('Lorem ipsum dolor sit amet.', 'h2')
+      .section-content
+        .text-wrapper
+          p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis dolorum ipsam sapiente amet debitis consectetur inventore, omnis quos consequatur ut fugiat eum eaque, neque architecto atque non. Nisi, molestiae accusamus.
+

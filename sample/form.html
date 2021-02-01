@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--[if IE]><meta http-equiv="cleartype" content="on"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0" id="viewport">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Form</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Load Google Font-->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Nunito:300,400,700&display=swap']
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div class="body-container">
+      <header class="header-container header-fixed">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-auto">
+              <div><a class="trans logo" href="../"><img src="../img/common/logo.png" alt="logo" width="150"></a></div>
+            </div>
+            <div class="col">
+              <div class="navbar-wrapper">
+                <nav class="navbar-nav">
+                  <div class="navbar-toggler">
+                    <div class="toggler-btn"><span></span><span></span><span></span></div>
+                  </div>
+                  <div class="navbar-collapse">
+                    <div class="navbar-nav">
+                      <ul class="nav-main">
+                        <li class="nav-item"><a class="nav-link" href="../">Home</a>
+                        </li>
+                        <li class="nav-item dropdown"><a class="nav-link" href="#">[Dropdown]</a>
+                          <div class="nav-dropdown"><a class="dropdown-item" href="../sample/modal.html">Modal</a><a class="dropdown-item" href="../sample/tabs.html">Tabs</a><a class="dropdown-item" href="../sample/accordion.html">Accordion</a>
+                          </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="../sample/grid.html">Gird</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="../sample/form.html">Form</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="../parts.html">Parts</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="navbar-over"></div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main-container">
+        <!-- ./ Keyvisual-->
+        <div class="keyvisual">
+          <div class="container">
+            <h1 class="keyvisual-heading">Form</h1>
+          </div>
+        </div>
+        <!-- ./ Section-->
+        <section class="section-parts">
+          <div class="wrapper">
+            <div class="section-header">
+              <h2 class="heading-primary">Forms wrapper</h2>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam molestias a explicabo deleniti distinctio praesentium fugiat dolorum quod tenetur, consequuntur, quo nisi placeat minus et commodi, nemo possimus? Obcaecati, ipsum.</p>
+            </div>
+            <div class="section-content">
+              <h3 class="heading-secondary">Default</h3>
+              <div class="form-wrapper">
+                <form class="form form-inline">
+                  <div class="contact-form mw_wp_form mw_wp_form_input">
+                    <div class="form-group">
+                      <div class="form-label">
+                        <label class="label" for="text">Lorem ipsum  Text</label><span class="required">required</span>
+                      </div>
+                      <div class="form-control"><span class="mw-wrap">
+                          <input class="mw-element mwform-text" type="text" name="name" id="text" value="" placeholder="Input your text" required></span></div>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-label"><span class="label">Lorem ipsum  Checkbox</span><span class="required">required</span></div>
+                      <div class="form-control"><span class="mw-wrap"><span class="mwform-checkbox-field vertical-item">
+                            <label>
+                              <input type="checkbox" name="checkbox[data][]" value="checkbox01" required><span class="mwform-checkbox-field-text">Checkbox01</span>
+                            </label></span><span class="mwform-checkbox-field vertical-item">
+                            <label>
+                              <input type="checkbox" name="checkbox[data][]" value="checkbox02" required><span class="mwform-checkbox-field-text">Checkbox02</span>
+                            </label></span></span></div>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-label">
+                        <label class="label" for="password">Lorem ipsum  Password</label><span class="required">required</span>
+                      </div>
+                      <div class="form-control"><span class="mw-wrap">
+                          <input class="mw-element mwform-password" type="password" name="password" id="password" value="" placeholder="Input your password" required></span></div>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-label">
+                        <label class="label" for="number">Lorem ipsum  Tel</label><span class="required">required</span>
+                      </div>
+                      <div class="form-control"><span class="mw-wrap">
+                          <input class="mw-element mwform-number" type="number" name="number" id="number" value="" placeholder="Input your number" required></span></div>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-label">
+                        <label class="label" for="email">Lorem ipsum  Email</label><span class="required">required</span>
+                      </div>
+                      <div class="form-control"><span class="mw-wrap">
+                          <input class="mw-element mwform-email" type="email" name="email" id="email" value="" placeholder="Input your email" required></span></div>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-label"><span class="label">Lorem ipsum  Select</span><span class="required">required</span></div>
+                      <div class="form-control"><span class="mw-wrap">
+                          <select class="mw-element mwform-select" name="region" required>
+                            <option value="">Select ------</option>
+                            <option value="value01">Lorem ipsum 01</option>
+                            <option value="value02">Lorem ipsum 02</option>
+                            <option value="value03">Lorem ipsum 03</option>
+                            <option value="value04">Lorem ipsum 04</option>
+                          </select></span></div>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-label">
+                        <label class="label" for="message">Lorem ipsum  Textarea</label><span class="required">required</span>
+                      </div>
+                      <div class="form-control"><span class="mw-wrap">
+                          <textarea class="mw-element mwform-textarea" rows="10" name="message" id="message" placeholder="Input your messenger" required></textarea></span></div>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-label"><span class="label">Lorem ipsum  Radio</span><span class="required">required</span></div>
+                      <div class="form-control"><span class="mw-wrap"><span class="mwform-radio-field vertical-item">
+                            <label>
+                              <input type="radio" name="radio" value="radio" required><span class="mwform-radio-field-text">Radio01</span>
+                            </label></span><span class="mwform-radio-field vertical-item">
+                            <label>
+                              <input type="radio" name="radio" value="radio" required><span class="mwform-radio-field-text">Radio02</span>
+                            </label></span></span></div>
+                    </div>
+                    <div class="form-group is-block">
+                      <div class="block text-center">
+                        <button class="btn btn-primary mw-element mwform-button" type="submit">Sumbit</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer-container">
+        <div class="footer-top">
+          <div class="container">
+            <div class="text-center">
+              <p class="logo logo-footer"><a class="link" href="../">LOGO FOOTER</a></p>
+              <p class="footer-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui sequi ut assumenda eum quaerat veniam explicabo facilis repellat deserunt officiis, beatae, eos tempore commodi illum doloremque fuga nisi porro quasi.</p>
+              <address class="footer-address">Address: Lorem ipsum dolor sit amet.</address>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <p class="copyright">&copy; Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <p class="footer-totop js-backtotop"><a class="trans" href="#">ToTop</a></p>
+      </footer>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/scripts.js"></script>
+  </body>
+</html>

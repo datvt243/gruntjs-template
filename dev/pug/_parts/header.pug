@@ -1,0 +1,10 @@
+header.header-container.header-fixed(class=pageID=='top' ? 'header-top' : '')
+  .container
+    .row.align-items-center.justify-content-between
+      .col-auto
+        #{pageID == 'top' ? 'h1' : 'div' }
+          a.trans.logo(href=path+'/')
+            img(src=path+"/img/common/logo.png" alt="logo" width="150")
+      .col
+        include navigation
+

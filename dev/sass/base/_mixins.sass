@@ -1,0 +1,68 @@
+@charset "utf-8"
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px,
+//   xxl: 1400px
+// );
+
+$sm:    576px
+$md:    768px
+$lg:    992px
+$xl:    1200px
+
+=desktop-ie
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+    @content
+=desktop-edge
+  @supports (-ms-ime-align: auto)
+    @content
+
+=tablet
+  @media screen and ( max-width: 1023px )
+    @content
+
+=sm
+  @media screen and ( max-width: $sm )
+    @content
+=md
+  @media screen and ( max-width: $md )
+    @content
+=xl
+  @media screen and ( max-width: $xl )
+    @content
+
+=text-wrap
+  overflow-wrap: break-word
+  +desktop-ie
+    word-break: break-all
+
+=clearfix()
+  &::after
+    display: block
+    content: ""
+    clear: both
+
+=placeholder($color)
+  &::-webkit-input-placeholder
+    color: $color
+  &::-moz-placeholder
+    color: $color
+  &:-ms-input-placeholder
+    color: $color
+  &:-moz-placeholder
+    color: $color
+
+=appearance($val)
+  -webkit-appearance: #{$val}
+  -moz-appearance: #{$val}
+  appearance: #{$val}
+
+=border($width: 1, $style: "solid", $color: $border)
+  border: #{$width}px #{$style} #{$color}
+
+=transition($style, $duration: $speed, $ease: "ease")
+  transition: #{$style} #{$duration} #{$ease}

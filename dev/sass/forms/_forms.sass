@@ -1,0 +1,135 @@
+@charset "utf-8"
+
+input, textarea
+  +placeholder($placeholder)
+
+input, textarea, select
+  width: 100%
+  display: block
+  font:
+    weight: 400
+  line-height: 1.4
+  background:
+    color: #fff
+    clip: padding-box
+  &:focus
+    outline: 0
+
+/* -----------------------------------------------*/
+
+.form
+
+  &-label
+    display: inline-block
+    margin-bottom: 5px
+
+  &-control
+    padding: 10px
+    font:
+      size: $base-font-size
+      weight: 400
+    color: #333
+    border: 1px solid $border
+      radius: $radius
+    +transition(all)
+    +appearance(none)
+
+    &.is-large
+      font-size: 1.2em
+    &.is-small
+      font-size: .85em
+
+    &.is-error
+      border-color: $danger !important
+
+    &:disabled, &[readonly]
+      background-color: #e9ecef
+      opacity: 1
+
+  &-raido, &-check
+    position: relative
+    cursor: pointer
+    line-height: 1.4
+    padding:
+      left: 25px
+
+    input
+      display: none
+      &:checked
+        ~ .virtual-box
+          border: 1px solid $border
+
+    .virtual-box
+      position: absolute
+      left: 0
+      top: 0
+      $val: 20px
+      width: #{$val}
+      height: #{$val}
+      border: 0.5px solid $border
+      background:
+        color: #484f59
+        size: cover
+        position: center
+        repeat: no-repeat
+
+    .text
+      display: inline-block
+      vertical-align: middle
+
+  &-check
+    .virtual-box
+      border-radius: 2px
+    input
+      &:checked ~ .virtual-box
+        background:
+          image: url("../assets/icons/icon-check-solid.svg")
+
+  &-radio
+    .virtual-box
+      border-radius: 50%
+    input
+      &:checked ~ .virtual-box
+        background:
+          image: url("../assets/icons/icon-circle-solid.svg")
+
+  &-group
+    overflow: hidden
+    position: relative
+    display: flex
+    flex-wrap: wrap
+    align-items: stretch
+    width: 100%
+    +border
+
+    .text
+      display: flex
+      align-items: center
+      padding: 5px
+      font:
+        size: 1rem
+        weight: 400
+      line-height: 1.4
+      text-align: center
+      white-space: nowrap
+      background:
+        color: $border
+
+      + .form-control
+        &:last-child
+          border-left: 1px solid $border
+
+    .form-control
+      position: relative
+      flex: 1 1 auto
+      width: 1%
+      min-width: 0
+      border: 0
+      + .text
+        &:last-child
+          border-left: 1px solid $border
+
+  &-row
+    position: relative
+    &:not(:last-child)
+      margin-bottom: 20px

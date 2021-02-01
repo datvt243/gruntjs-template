@@ -1,0 +1,20 @@
+extends ../_layouts/default
+
+block vars
+  -title        = 'Accordion'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'page'
+  -path         = '..'
+block container
+
+  +keyvisual('Accordion')
+
+  // ./ Section
+  section.section-parts
+    .wrapper
+      .section-header
+        +heading_primary('Accordion Wrapper')
+      .section-content
+        each val in ['001', '002', '003', '004', '005']
+          +accordion(val)

@@ -1,0 +1,66 @@
+extends ../_layouts/default
+
+block vars
+  -title        = 'Tabs'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'page'
+  -path         = '..'
+block container
+
+  +keyvisual('Tabs')
+
+  // ./ Section
+  section.section-parts
+    .wrapper
+      .section-header
+        +heading_primary('Tabs wrapper')
+      .section-content
+        .tabs-wrapper.js-tabs
+          ul.tabs-link
+            li.is-current(data-tab='tab1')
+              span.item Tab 01
+            li(data-tab='tab2')
+              span.item Tab 02
+            li(data-tab='tab3')
+              span.item Tab 03
+          .tabs-body
+            .tabs-content.is-current#tab1
+              h3.heading-secondary Tab01 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            .tabs-content#tab2
+              h3.heading-secondary Tab02 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            .tabs-content#tab3
+              h3.heading-secondary Tab03 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        .tabs-wrapper.js-tabs
+          ul.tabs-link
+            li.is-current(data-tab='tab1')
+              span.item Tab 01
+            li(data-tab='tab2')
+              span.item Tab 02
+            li(data-tab='tab3')
+              span.item Tab 03
+          .tabs-body
+            .tabs-content.is-current#tab1
+              h3.heading-secondary Tab01 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            .tabs-content#tab2
+              h3.heading-secondary Tab02 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            .tabs-content#tab3
+              h3.heading-secondary Tab03 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit.

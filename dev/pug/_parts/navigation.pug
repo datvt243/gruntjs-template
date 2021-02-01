@@ -1,0 +1,55 @@
+.navbar-wrapper
+  nav.navbar-nav
+    .navbar-toggler
+      .toggler-btn
+        span
+        span
+        span
+    .navbar-collapse
+      .navbar-nav
+        ul.nav-main
+          -
+            var list_nav = [
+              {
+                link: path+'/',
+                id: 'Home'
+              },
+              {
+                link: '#',
+                id: '[Dropdown]',
+                dropdown: [
+                  {
+                    link: path+'/sample/modal.html',
+                    id: 'Modal'
+                  },
+                  {
+                    link: path+'/sample/tabs.html',
+                    id: 'Tabs'
+                  },
+                  {
+                    link: path+'/sample/accordion.html',
+                    id: 'Accordion'
+                  }
+                ]
+              },
+              {
+                link: path+'/sample/grid.html',
+                id: 'Gird'
+              },
+              {
+                link: path+'/sample/form.html',
+                id: 'Form'
+              },
+              {
+                link: path+'/parts.html',
+                id: 'Parts'
+              }
+            ]
+          each nav in list_nav
+            li.nav-item(class= nav.dropdown ? 'dropdown' : '')
+              a.nav-link(href=nav.link)= nav.id
+              if nav.dropdown
+                .nav-dropdown
+                  each item in nav.dropdown
+                    a.dropdown-item(href=item.link)= item.id
+      .navbar-over

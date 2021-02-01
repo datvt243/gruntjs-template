@@ -1,0 +1,49 @@
+extends ../_layouts/default
+
+block vars
+  -title        = 'Modal'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'page'
+  -path         = '..'
+block container
+
+  +keyvisual('Modal')
+
+  // ./ Section
+  section.section-parts
+    .wrapper
+      .section-header
+        +heading_primary('Modal wrapper')
+      .section-content
+        .text-wrapper
+          p.text-center
+            a.btn.btn-primary.js-modal(href="#" data-modal='modal01') Modal 01
+          p.text-center
+            a.btn.btn-primary.js-modal(href="#" data-modal='modal02') Modal 02
+          p.text-center
+            a.btn.btn-primary.js-modal(href="#" data-modal='modal03') Modal 03
+        .modal-wrapper#modal01
+          .terms-wrapper
+            .modal-header
+              p.heading-secondary Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            .modal-body
+              h3.heading-secondary Modal 01
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quos ad voluptatibus at! Quibusdam, error adipisci. Itaque sed fuga eaque nesciunt quas magni. Veritatis quisquam quae quaerat! Tenetur, aliquam amet.
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quos ad voluptatibus at! Quibusdam, error adipisci. Itaque sed fuga eaque nesciunt quas magni. Veritatis quisquam quae quaerat! Tenetur, aliquam amet.
+        .modal-wrapper#modal02
+          .terms-wrapper
+            .modal-header
+              p.heading-secondary Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            .modal-body
+              h3.heading-secondary Modal 02
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quos ad voluptatibus at! Quibusdam, error adipisci. Itaque sed fuga eaque nesciunt quas magni. Veritatis quisquam quae quaerat! Tenetur, aliquam amet.
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quos ad voluptatibus at! Quibusdam, error adipisci. Itaque sed fuga eaque nesciunt quas magni. Veritatis quisquam quae quaerat! Tenetur, aliquam amet.Lorem ipsum dolor sit amet consectetur adipisicing elit.トLorem ipsum dolor sit amet consectetur adipisicing elit.トLorem ipsum dolor sit amet consectetur adipisicing elit.トLorem ipsum dolor sit amet consectetur adipisicing elit.トLorem ipsum dolor sit amet consectetur adipisicing elit.トLorem ipsum dolor sit amet consectetur adipisicing elit.ト
+        .modal-wrapper#modal03
+          .terms-wrapper
+            .modal-header
+              p.heading-secondary Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            .modal-body
+              h3.heading-secondary Modal 03
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quos ad voluptatibus at! Quibusdam, error adipisci. Itaque sed fuga eaque nesciunt quas magni. Veritatis quisquam quae quaerat! Tenetur, aliquam amet.
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quos ad voluptatibus at! Quibusdam, error adipisci. Itaque sed fuga eaque nesciunt quas magni. Veritatis quisquam quae quaerat! Tenetur, aliquam amet.Lorem ipsum dolor sit amet consectetur adipisicing elit.トLorem ipsum dolor sit amet consectetur adipisicing elit.トLorem ipsum dolor sit amet consectetur adipisicing elit.トLorem ipsum dolor sit amet consectetur adipisicing elit.トLorem ipsum dolor sit amet consectetur adipisicing elit.トLorem ipsum dolor sit amet consectetur adipisicing elit.ト

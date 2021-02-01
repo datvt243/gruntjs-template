@@ -1,0 +1,40 @@
+include ../_mixins/_all
+
+block vars
+  -title        = ''
+  -description  = ''
+  -keywords     = ''
+  -pageID       = ''
+  -path         = ''
+
+doctype html
+html.no-js(lang="ja")
+  head
+    meta(charset="utf-8")
+    meta(name="HandheldFriendly", content="True")
+    meta(name="MobileOptimized", content="320")
+    meta(name="format-detection", content="telephone=no")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    //[if IE]><meta http-equiv="cleartype" content="on"><![endif]
+    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0", id="viewport")
+    meta(name="description", content=description)
+    meta(name="keywords", content=keywords)
+    title=title
+    link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap-grid.min.css")
+    link(rel="stylesheet", href=path+"/css/styles.css")
+    // Load Google Font
+    script(src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js")
+    script.
+      WebFont.load({
+        google: {
+          families: ['Nunito:300,400,700&display=swap']
+        }
+      });
+  body
+    .body-container
+      include ../_parts/header
+      main.main-container
+        block container
+      include ../_parts/footer
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+    script(src=path+"/js/scripts.js")

@@ -1,0 +1,21 @@
+@charset "utf-8"
+
+.dropdown
+  &-enter-active, &-leave-active 
+    transition: all .3s
+  &-enter, &-leave-to 
+    opacity: 0
+    transform: translateY(10px)
+
+.transition-router
+
+  &-enter-active, &-leave-active 
+    transition: all 0.5s ease
+
+  &-enter 
+    transform: translateY(10px)
+    opacity: 0
+
+  &-leave 
+    transform: translateY(-10px)
+    opacity: 0
